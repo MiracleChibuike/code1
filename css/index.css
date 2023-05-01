@@ -1,0 +1,18 @@
+
+div {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+  }
+  .closebtn {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .closebtn:hover {
+    color: #000;
+  }
+  

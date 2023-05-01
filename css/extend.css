@@ -1,0 +1,81 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(217, 171, 186);
+}
+.parentContainer{
+    background-color: rgb(20, 35, 40);
+}
+.flex-containers{
+    color: #fff;
+}
+.navicon{
+    display: none;
+}
+.ul{
+    margin-top: 10px;
+}
+.ul >.listItem{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 10px;
+}
+.ul >.listItem >li{
+    padding: 10px;
+}
+.ul >.listItem >a{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    bottom: 55px;
+}
+.ul >.listItem >a:hover{
+    background-color: rgb(20, 35, 40);
+    font-weight: bolder;
+    box-shadow: 20px 10px 45px orange;
+    transition: all .8s;
+    text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+    .ul >.listItem{
+        display: none;
+    }
+    .navicon{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 50px;
+        left: -10px;
+    }
+    .navicon > i:hover{
+       cursor: pointer;
+       border: 2px solid rgb(17, 178, 232);
+       font-weight: lighter;
+    }
+    .ul >.listItem{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(100, 100, 150);
+        width: 100%;
+    }
+    .ul >.listItem >a{
+        text-align: left;
+        position: relative;
+        top: 5px;
+    }
+    .ul >.listItem a:hover{
+        font-weight: bolder;
+        text-decoration: underline;
+        transition: all .5s ease-in-out;
+        background-color: rgb(20, 35, 40);
+        box-shadow: 20px 10px 45px orange;
+        cursor: pointer;
+    }
+}
